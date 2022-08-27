@@ -30,7 +30,7 @@ export default function QuizList() {
     const renderQuiz = () => {
         return quizList.map((quiz) => {
             return (
-                <div className="card col-lg-6" key={quiz.id}>
+                <div className="card col-lg-4 col-sm-8" key={quiz.id}>
                     <div className="card-header bg-primary card-caption">
                         Quiz number: {quiz.id}
                     </div>
@@ -64,22 +64,7 @@ export default function QuizList() {
             <nav className="navbar navbar-expand-lg nav-bg">
                 <div className="container-fluid ">
                     <h4 className="navbar-brand" >Quizzix</h4>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav">
-                            <li className="nav-item">
-                                <a className="nav-link active" href="/home">Home</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link active" href="/home">About</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link active" href="/home">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
+                    
                 </div>
             </nav>
             <div className="container">

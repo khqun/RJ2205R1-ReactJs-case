@@ -4087,7 +4087,7 @@
         "id": 6,
         "subject": "science",
         "name": "quiz 6",
-        "time": 60,
+        "time": 15,
         "question": [{
                 "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum ex ut blandit pretium?",
                 "id": 1,

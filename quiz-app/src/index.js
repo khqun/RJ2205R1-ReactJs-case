@@ -6,11 +6,11 @@ import { Provider } from 'react-redux';
 import store from './redux/store/store';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Login from './components/loginComponents/loginComponent';
-import "bootstrap/dist/css/bootstrap.css";
 import QuizList from './components/quizComponents/quizListComp';
 import DoQuiz from './components/quizComponents/doQuizComp';
 import Score from './components/quizComponents/scoreComp';
 import HistoryScore from './components/quizComponents/scoreHistoryComp';
+import "bootstrap/dist/css/bootstrap.css";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

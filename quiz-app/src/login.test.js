@@ -11,6 +11,7 @@ import '@testing-library/jest-dom/extend-expect';
 import QuizList from './components/quizComponents/quizListComp';
 import DoQuiz from './components/quizComponents/doQuizComp';
 import Score from './components/quizComponents/scoreComp';
+import HistoryScore from './components/quizComponents/scoreHistoryComp';
 let container = null;
 beforeEach(() => {
     // setup a DOM element as a render target
@@ -66,4 +67,13 @@ it("renders with or without a name", () => {
     })
     expect(container.textContent).toContain("Quizzix");
     expect(screen.getByRole('button', { name: "Click here to submit your test" })).toHaveClass('to-menu-button')
+    act(() => {
+        render(<Provider store={store}>
+            <BrowserRouter>
+                <Routes>
+                    <Route path='/' element={<HistoryScore />} />
+                </Routes>
+            </BrowserRouter></Provider>, container);
+    })
+    expect(container.textContent).toContain("Quizzix");
 });
